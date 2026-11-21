@@ -3,16 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Карточкин — SEO-описание и ТЗ на инфографику для WB и Ozon за минуту</title>
-<meta name="description" content="Telegram-бот для селлеров Wildberries и Ozon: SEO-заголовок, продающее описание, ключевые слова и ТЗ на 5 слайдов инфографики по фото или паре строк о товаре. Первые 3 карточки бесплатно.">
+<title>Карточкин — SEO-карточки, аудит и сводки для WB и Ozon</title>
+<meta name="description" content="Telegram-бот для селлеров Wildberries и Ozon: SEO-карточка за минуту, бесплатный аудит, утренние сводки и ответы на отзывы. 3 карточки и первый аудит бесплатно, оплата в Stars.">
 <link rel="canonical" href="https://lostronan.github.io/kartochkin-site/">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <meta name="theme-color" content="#6d28f5">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="ru_RU">
 <meta property="og:site_name" content="Карточкин">
-<meta property="og:title" content="Карточкин — карточка для WB и Ozon за минуту">
-<meta property="og:description" content="SEO-заголовок, описание, ключи и ТЗ на инфографику по фото товара. 3 карточки бесплатно в Telegram.">
+<meta property="og:title" content="Карточкин — карточки, аудит и Pro для WB и Ozon">
+<meta property="og:description" content="SEO-карточка за минуту, первый аудит бесплатно, утренние сводки и ответы на отзывы. 3 карточки в подарок, оплата в Telegram Stars.">
 <meta property="og:url" content="https://lostronan.github.io/kartochkin-site/">
 <meta property="og:image" content="https://lostronan.github.io/kartochkin-site/og.png">
 <meta property="og:image:width" content="1200">
@@ -66,7 +66,10 @@ h2{font-size:clamp(26px,4vw,38px);line-height:1.15;letter-spacing:-.01em;margin:
 .example .note{font-size:13px;color:#9d99b8;margin-top:16px}
 .price .card{text-align:center;padding:30px 22px}
 .price .amt{font-size:44px;font-weight:800;margin:6px 0}
+.price .per{font-size:15px;color:var(--mute);margin:-4px 0 10px}
 .price .hl{border:2px solid var(--v);box-shadow:0 20px 50px -25px rgba(109,40,245,.6)}
+.price ul{text-align:left;color:var(--mute);margin:14px 0 0;padding-left:18px;font-size:14.5px;line-height:1.45}
+.price ul li{margin:0 0 6px}
 details{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px 20px;margin-bottom:10px}
 summary{font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:12px}
 summary::-webkit-details-marker{display:none}
@@ -81,7 +84,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-bet
 .sticky{position:fixed;left:12px;right:12px;bottom:12px;z-index:20;display:none}
 .sticky .btn{width:100%}
 @media(min-width:760px){.hero-grid{grid-template-columns:1.15fr .85fr}.g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}.hero{padding:80px 0 60px}footer{padding-bottom:28px}}
-@media(max-width:759px){.sticky.on{display:block}.top .btn{display:none}.btn.big{width:100%;padding:18px 16px;font-size:17px}}
+@media(max-width:759px){.sticky.on{display:block}.top .btn{display:none}.btn.big{width:100%;padding:18px 16px;font-size:17px}.price .amt{font-size:36px}}
 </style>
 </head>
 <body>
@@ -95,14 +98,15 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-bet
   <div>
     <span class="pill">Для селлеров Wildberries и Ozon</span>
     <h1>Карточка товара <span class="g">за минуту</span>, а не за вечер</h1>
-    <p class="lead">Пришлите фото товара или пару строк о нём. Карточкин соберёт SEO-заголовок, продающее описание, ключи и готовое ТЗ на 5 слайдов инфографики для дизайнера.</p>
+    <p class="lead">Пришлите фото или пару строк о товаре — Карточкин соберёт SEO-заголовок, описание, ключи и ТЗ на инфографику. А ещё проверит уже выложенную карточку и подскажет, что поправить.</p>
     <a class="btn big cta" href="https://t.me/kartochkin_seller_bot?start=src_yadirect">Собрать карточку бесплатно →</a>
-    <div class="under">3 карточки бесплатно · работает в Telegram · без карты и регистрации</div>
+    <div class="under">3 карточки и первый аудит бесплатно · оплата в Telegram Stars</div>
   </div>
   <div class="phone" aria-hidden="true">
     <div class="msg me">📷 Термокружка 500 мл, держит тепло 12 ч, не протекает</div>
     <div class="msg bot"><b>SEO-заголовок</b>Термокружка 500 мл с крышкой, держит тепло 12 часов<b>Ключи</b>термокружка, термокружка для офиса, термокружка для дороги…<b>ТЗ на инфографику</b>Слайд 1: термокружка с крышкой + название…</div>
-    <div class="msg bot">✅ Готово. Копируйте в карточку и отдавайте ТЗ дизайнеру.</div>
+    <div class="msg me">https://www.wildberries.ru/catalog/…</div>
+    <div class="msg bot"><b>Аудит карточки</b>Оценка, что исправить, новый заголовок и каких ключей не хватает.</div>
   </div>
 </div></section>
 
@@ -163,6 +167,19 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-bet
   <p style="text-align:center;margin-top:26px"><a class="btn cta" href="https://t.me/kartochkin_seller_bot?start=src_yadirect">Хочу такую же для своего товара →</a></p>
 </div></section>
 
+<section id="tools"><div class="wrap">
+  <h2>Не только карточки</h2>
+  <p class="sub">Аудит, юнит-экономика и инструменты Pro — всё в том же чате.</p>
+  <div class="grid g3">
+    <div class="card"><div class="ic">🔍</div><h3>Бесплатный аудит</h3><p>Пришлите ссылку WB или Ozon либо команду /audit. Оценка карточки, что исправить, новый заголовок и каких ключей не хватает. Первый — бесплатно.</p></div>
+    <div class="card"><div class="ic">☀️</div><h3>Утренняя сводка</h3><p>В 09:00 по вашим товарам: цена, остатки, рейтинг и позиция в поиске. Слежение за конкурентами и новичками в топ-10 подключаем постепенно.</p></div>
+    <div class="card"><div class="ic">💬</div><h3>Ответы на отзывы</h3><p>ИИ пишет черновик, вы нажимаете «Опубликовать» — и только тогда ответ уходит на площадку.</p></div>
+    <div class="card"><div class="ic">✍️</div><h3>SEO-рерайт</h3><p>Обновит заголовок и описание под поиск площадки. В Pro — без списания кредитов.</p></div>
+    <div class="card"><div class="ic">🧮</div><h3>Калькулятор /calc</h3><p>Маржа, точка безубыточности, цена для маржи 20% и комиссии WB и Ozon. Бесплатно для всех.</p></div>
+    <div class="card"><div class="ic">🎁</div><h3>Пригласите друга</h3><p>По ссылке из /ref оба получаете по 2 кредита. После первой оплаты друга — ещё по 7 дней Pro каждому.</p></div>
+  </div>
+</div></section>
+
 <section id="who"><div class="wrap">
   <h2>Кому подойдёт</h2>
   <p class="sub">Всем, кто заводит карточки сам и не хочет тратить на это вечера.</p>
@@ -176,27 +193,62 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-bet
 
 <section id="price" class="price"><div class="wrap">
   <h2 style="text-align:center">Цена</h2>
-  <p class="sub" style="text-align:center;margin-left:auto;margin-right:auto">Без подписки. Платите только за карточки, которые нужны.</p>
-  <div class="grid g2" style="max-width:760px;margin:0 auto">
-    <div class="card"><h3>Старт</h3><div class="amt">0 ₽</div><p>3 карточки бесплатно сразу после запуска бота. Хватит, чтобы оценить результат на своих товарах.</p></div>
-    <div class="card hl"><h3>Пакет</h3><div class="amt">100 ⭐</div><p>10 карточек за 100 Telegram Stars, это 10 ⭐ за карточку. Оплата прямо в Telegram, в пару касаний.</p></div>
+  <p class="sub" style="text-align:center;margin-left:auto;margin-right:auto">Оплата в Telegram Stars, разово и без автосписаний. Пакет карточек или Pro на 30 дней.</p>
+  <div class="grid g3">
+    <div class="card">
+      <h3>Старт</h3>
+      <div class="amt">0 ₽</div>
+      <p class="per">бесплатно</p>
+      <p>3 карточки сразу после запуска бота и первый полный аудит в подарок.</p>
+      <ul>
+        <li>SEO-заголовок, описание, ключи и ТЗ на 5 слайдов</li>
+        <li>Аудит по ссылке WB/Ozon или команде /audit: оценка, правки, новый заголовок, недостающие ключи</li>
+        <li>Калькулятор прибыли /calc — тоже бесплатно</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Пакет</h3>
+      <div class="amt">100 ⭐</div>
+      <p class="per">10 карточек</p>
+      <p>По 10 ⭐ за карточку. Оплата в пару касаний прямо в Telegram.</p>
+      <ul>
+        <li>Полный пакет на каждую карточку</li>
+        <li>Если генерация сорвалась из-за сбоя, карточка вернётся на баланс</li>
+      </ul>
+    </div>
+    <div class="card hl">
+      <h3>Pro</h3>
+      <div class="amt">390 ⭐</div>
+      <p class="per">на 30 дней</p>
+      <p>Разовый пробный период — 3 дня, потом оплата Stars. Без автопродления.</p>
+      <ul>
+        <li>Утренняя сводка в 09:00 по вашим товарам: цена, остатки, рейтинг, позиция в поиске</li>
+        <li>Слежение за конкурентами и новичками в топ-10 подключаем постепенно</li>
+        <li>ИИ-черновики ответов на отзывы — публикация только после вашей кнопки</li>
+        <li>SEO-рерайт заголовка и описания</li>
+        <li>Аудиты без списания кредитов</li>
+      </ul>
+    </div>
   </div>
-  <p style="text-align:center;color:var(--mute);margin-top:18px">1 карточка = полный пакет: заголовок, описание, ключи и ТЗ на 5 слайдов. Если генерация сорвалась из-за сбоя, карточка вернётся на баланс.</p>
+  <p style="text-align:center;color:var(--mute);margin-top:22px">Пригласите друга через /ref: оба получите по 2 кредита, а после его первой оплаты — ещё по 7 дней Pro. Для сводок по своим товарам и ответов на отзывы понадобится API-ключ кабинета WB или Ozon.</p>
 </div></section>
 
 <section id="faq"><div class="wrap" style="max-width:780px">
   <h2>Частые вопросы</h2>
   <details><summary>Бот рисует картинки для карточки?</summary><p>Нет. Карточкин не рисует изображения. Он пишет подробное ТЗ на 5 слайдов инфографики: что на фото, какой текст и какой акцент. Его можно сразу отдать дизайнеру или собрать слайды самому в любом редакторе.</p></details>
-  <details><summary>Он сам опубликует карточку в личном кабинете?</summary><p>Нет. Бот ничего не публикует и не подключается к кабинету WB или Ozon. Вы получаете тексты в чате и вставляете их в карточку сами.</p></details>
-  <details><summary>Это безопасно? Нужен доступ к кабинету?</summary><p>Доступ не нужен. Бот не просит логины, пароли, API-ключи и данные магазина. Он видит только то, что вы сами ему прислали: название, описание или фото товара.</p></details>
-  <details><summary>Работает и для Ozon?</summary><p>Да. Выбираете площадку, и бот подстраивает заголовок и описание под её требования.</p></details>
+  <details><summary>Он сам опубликует карточку в личном кабинете?</summary><p>Карточку — нет. Тексты вы копируете и вставляете сами. Ответы на отзывы бот может отправить на площадку, но только после того, как вы нажмёте «Опубликовать».</p></details>
+  <details><summary>Это безопасно? Нужен доступ к кабинету?</summary><p>Для карточек, калькулятора и аудита по ссылке доступ не нужен: бот видит только то, что вы сами прислали. Чтобы получать сводки по своим товарам и отвечать на отзывы, подключите API-ключ WB или Ozon в боте (/keys). Ключ хранится, чтобы читать данные кабинета; ответы уходят на площадку только после вашего одобрения. Логины и пароли бот не просит.</p></details>
+  <details><summary>Что даёт бесплатный аудит?</summary><p>Пришлите ссылку на карточку WB или Ozon либо команду /audit. Бот оценит карточку, укажет, что исправить, предложит новый заголовок и подскажет, каких ключевых слов не хватает. Первый полный аудит — бесплатно, дальше аудиты входят в Pro или списывают 1 кредит.</p></details>
+  <details><summary>Что входит в Pro и есть ли пробный период?</summary><p>Да, один раз на 3 дня. В Pro: утренняя сводка в 09:00, черновики ответов на отзывы, SEO-рерайт и аудиты без лимита кредитов. Слежение за конкурентами подключаем постепенно, поэтому в сводке эти данные могут появляться не всегда. После пробного периода — 390 ⭐ за 30 дней, без автосписания.</p></details>
+  <details><summary>Работает и для Ozon?</summary><p>Да. Выбираете площадку, и бот подстраивает заголовок и описание под её требования. Аудит, калькулятор и инструменты Pro тоже работают с Ozon.</p></details>
   <details><summary>Обязательно присылать фото?</summary><p>Нет. Достаточно названия и пары преимуществ текстом. Фото помогает, когда лень печатать: бот распознаёт товар и учитывает детали со снимка.</p></details>
-  <details><summary>Как оплатить?</summary><p>Через Telegram Stars прямо в боте: команда /buy или кнопка «Купить кредиты». Звёзды покупаются в самом Telegram.</p></details>
+  <details><summary>Как оплатить?</summary><p>Через Telegram Stars прямо в боте: пакет 10 карточек за 100 ⭐ (/buy) или Pro за 390 ⭐ на 30 дней (/pro). Звёзды покупаются в самом Telegram.</p></details>
+  <details><summary>Как работает приглашение друга?</summary><p>В боте команда /ref даёт вашу ссылку. Когда друг запустит бота по ней, вы оба получите по 2 кредита. После его первой оплаты — ещё по 7 дней Pro каждому.</p></details>
 </div></section>
 
 <div class="wrap"><div class="final">
-  <h2>Первые 3 карточки за наш счёт</h2>
-  <p>Откройте бота, пришлите товар и посмотрите, что получится. Это займёт минуту.</p>
+  <h2>Первые 3 карточки и аудит — за наш счёт</h2>
+  <p>Откройте бота, пришлите товар или ссылку на карточку и посмотрите, что получится. Это займёт минуту.</p>
   <a class="btn big cta" href="https://t.me/kartochkin_seller_bot?start=src_yadirect">Открыть Карточкина в Telegram →</a>
 </div></div>
 </main>
